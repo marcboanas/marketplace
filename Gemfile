@@ -8,6 +8,7 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.3'
+gem 'bootstrap-sass'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -54,9 +55,9 @@ group :development do
   gem 'guard'
 end
 
-group :test do
-  gem 'minitest-reporters'
-end
+gem 'minitest', group: :test
+gem 'minitest-reporters', group: :test
+gem 'rails-controller-testing', group: :test
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
