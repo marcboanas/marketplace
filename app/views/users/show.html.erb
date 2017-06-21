@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<% provide(:title, @user.name) %>
 
 <p>
   <strong>Name:</strong>
@@ -18,6 +18,3 @@
 	</p>
 
 <% end %>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
