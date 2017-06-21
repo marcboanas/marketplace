@@ -56,9 +56,9 @@ group :development do
   gem 'guard'
 end
 
-gem 'minitest', group: :test, :production
-gem 'minitest-reporters', group: :test, :production
-gem 'rails-controller-testing', group: :test, :production
+gem 'minitest', group: [:test, :production]
+gem 'minitest-reporters', group: [:test, :production]
+gem 'rails-controller-testing', group: [:test, :production]
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
